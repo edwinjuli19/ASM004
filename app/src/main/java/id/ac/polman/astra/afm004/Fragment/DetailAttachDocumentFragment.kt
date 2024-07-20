@@ -6,17 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ListView
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import id.ac.polman.astra.afm004.DetailAttachDocumentAdapter
-import id.ac.polman.astra.afm004.LOVAssetClassAdapter
-import id.ac.polman.astra.afm004.LOVPlantIdAdapter
 import id.ac.polman.astra.afm004.Models.DetailAttachDocument
-import id.ac.polman.astra.afm004.Models.LOVAssetClass
-import id.ac.polman.astra.afm004.Models.LOVPlantId
 import id.ac.polman.astra.afm004.R
 
 class DetailAttachDocumentFragment : Fragment() {
+
+    private lateinit var adapter: DetailAttachDocumentAdapter
+    private val detailDocuments = mutableListOf<DetailAttachDocument>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -54,6 +51,12 @@ class DetailAttachDocumentFragment : Fragment() {
         val params = listView.layoutParams
         params.height = totalHeight + (listView.dividerHeight * (listAdapter.count - 1))
         listView.layoutParams = params
+    }
+
+    private fun addDocument(documentType: String, documentName: String, geotag: String) {
+        val document = DetailAttachDocument(documentType, documentName, geotag)
+        detailDocuments.add(document)
+        adapter.notifyDataSetChanged()
     }
 
 

@@ -913,7 +913,6 @@
 
 
             <com.google.android.material.card.MaterialCardView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/atach_document"
                 android:layout_width="345dp"
                 android:layout_height="wrap_content"
@@ -1011,6 +1010,15 @@
                     android:layout_centerInParent="true"
                     android:scaleType="centerCrop"
                     android:enabled="false" />
+
+                <TextView
+                    android:id="@+id/text_document_location"
+                    android:layout_width="4dp"
+                    android:layout_height="6dp"
+                    android:layout_marginTop="8dp"
+                    android:enabled="false"
+                    android:text="Document Location" />
+
 
             </com.google.android.material.card.MaterialCardView>
 

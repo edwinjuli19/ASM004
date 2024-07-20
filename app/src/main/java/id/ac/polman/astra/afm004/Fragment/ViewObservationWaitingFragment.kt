@@ -24,6 +24,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import id.ac.polman.astra.ObservationSettlement.main.ImageHandler
+import id.ac.polman.astra.ObservationSettlement.main.LocationHandler
+import id.ac.polman.astra.ObservationSettlement.main.PermissionHandler
 import id.ac.polman.astra.afm004.Activity.LoVActivity
 import id.ac.polman.astra.afm004.R
 import java.util.Calendar
@@ -54,16 +57,26 @@ class ViewObservationWaitingFragment : Fragment(), NotesFragment.OnNotesSavedLis
     private lateinit var splitAssetEditText: EditText
     private lateinit var tanggalMasProEditText: EditText
     private lateinit var assetExportLicense: EditText
+    private lateinit var assetManufacturing: EditText
     private lateinit var btnReadyToSettle: Button
 
     private lateinit var attachButton: ImageView
     private lateinit var documentTypeAttach: LinearLayout
     private lateinit var textJenis: TextView
+    private lateinit var text_document_location: TextView
+
+    // Handlers
+    private lateinit var imageHandler: ImageHandler
+    private lateinit var locationHandler: LocationHandler
+    private lateinit var permissionHandler: PermissionHandler
+
 
     companion object {
         private const val REQUEST_IMAGE_CAPTURE = 101
         private const val REQUEST_IMAGE_SELECT = 102
         private const val REQUEST_CAMERA_PERMISSION = 103
+        private val PICK_IMAGE_REQUEST = 1
+        private val PICK_DOCUMENT_REQUEST = 2
     }
 
     override fun onCreateView(
@@ -77,6 +90,15 @@ class ViewObservationWaitingFragment : Fragment(), NotesFragment.OnNotesSavedLis
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
+        //geotag
+        text_document_location = view.findViewById(R.id.text_document_location)
+
+        // Initialize handlers
+        imageHandler = ImageHandler(requireActivity(), view.findViewById(R.id.iv_picture), text_document_location)
+        locationHandler = LocationHandler(requireActivity(), text_document_location)
+        permissionHandler = PermissionHandler(requireActivity())
+
         attachButton = view.findViewById(R.id.ic_cht_attach)
 
         assetSudahDigunakanEditText = view.findViewById(R.id.Assetsudahdigunakan)
@@ -86,6 +108,7 @@ class ViewObservationWaitingFragment : Fragment(), NotesFragment.OnNotesSavedLis
         splitAssetEditText = view.findViewById(R.id.SplitAsset)
         tanggalMasProEditText = view.findViewById(R.id.TanggalMasPro)
         assetExportLicense = view.findViewById(R.id.asset_export_license)
+        assetManufacturing = view.findViewById(R.id.asset_manufacturing)
         btnReadyToSettle = view.findViewById(R.id.btn_readytosettle)
         documentTypeAttach = view.findViewById(R.id.document_type_attach)
 
@@ -97,6 +120,7 @@ class ViewObservationWaitingFragment : Fragment(), NotesFragment.OnNotesSavedLis
         tanggalMasProEditText.setOnClickListener { showDatePickerDialog() }
 
         assetExportLicense.setOnClickListener { showPopupMenu(it) }
+        assetManufacturing.setOnClickListener { showAssetManufacturing(it) }
 
         // Initialize UI components
         assetDescription = view.findViewById(R.id.asset_description)
@@ -148,6 +172,7 @@ class ViewObservationWaitingFragment : Fragment(), NotesFragment.OnNotesSavedLis
         documentTypeAttach.setOnClickListener {
             startLoVActivity("document_type_attach", "")
         }
+
 
 
         // Set up button listeners
@@ -310,18 +335,7 @@ class ViewObservationWaitingFragment : Fragment(), NotesFragment.OnNotesSavedLis
             }
         }
 
-        if (resultCode == Activity.RESULT_OK) {
-            when (requestCode) {
-                REQUEST_IMAGE_CAPTURE -> {
-                    val imageBitmap = data?.extras?.get("data") as Bitmap
-                    // Handle the captured image
-                }
-                REQUEST_IMAGE_SELECT -> {
-                    val selectedImageUri: Uri? = data?.data
-                    // Handle the selected image from the gallery
-                }
-            }
-        }
+
     }
 
     private fun validateEditTexts(changedEditText: EditText) {
@@ -376,6 +390,20 @@ class ViewObservationWaitingFragment : Fragment(), NotesFragment.OnNotesSavedLis
         popupMenu.show()
     }
 
+    private fun showAssetManufacturing(view: View) {
+        val popupMenu = PopupMenu(requireContext(), view)
+        popupMenu.menuInflater.inflate(R.menu.asset_manufacturing, popupMenu.menu)
+
+        popupMenu.setOnMenuItemClickListener { item: MenuItem ->
+            val editText = view as EditText
+            editText.setText(item.title)
+            validateEditTexts(editText)
+            true
+        }
+
+        popupMenu.show()
+    }
+
     private fun showDatePickerDialog() {
         val calendar = Calendar.getInstance()
         val year = calendar.get(Calendar.YEAR)
@@ -408,7 +436,6 @@ class ViewObservationWaitingFragment : Fragment(), NotesFragment.OnNotesSavedLis
             else -> 0
         }
     }
-
 
 
     //Detail Document
@@ -460,6 +487,16 @@ class ViewObservationWaitingFragment : Fragment(), NotesFragment.OnNotesSavedLis
     private fun showSuccessDialog() {
         val successDialog = SuccessDialogFragment()
         successDialog.show(parentFragmentManager, "successDialog")
+    }
+
+    private fun getFileName(uri: Uri?): String {
+        // Implement logic to extract file name from Uri
+        return uri?.lastPathSegment ?: "Unknown"
+    }
+
+    private fun getGeotag(): String {
+        // Implement logic to get geotag, if applicable
+        return "Geotag"
     }
 
 
