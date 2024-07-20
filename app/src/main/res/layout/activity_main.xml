@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ListObservationActivity">
+
+    <ImageView
+        android:id="@+id/iv_picture"
+        android:layout_width="280dp"
+        android:layout_height="450dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/btn_take"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_picture"
+        android:layout_centerHorizontal="true"
+        android:text="Take A Picture"/>
+
+    <Button
+        android:id="@+id/btn_select"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_take"
+        android:layout_centerHorizontal="true"
+        android:text="Select Picture" />
+
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Location will appear here"
+        android:gravity="center"
+        android:textAlignment="center"/>
+
+<!--    <include-->
+<!--        android:id="@+id/content_card"-->
+<!--        layout="@layout/list_observation" />-->
+
+<!--    <androidx.fragment.app.FragmentContainerView-->
+<!--        android:id="@+id/fragmentContainer"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginTop="16dp"-->
+
+<!--        app:layout_constraintBottom_toBottomOf="parent" />-->
+
+
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/fragmentContainer"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@id/content_card" />-->
+
+</RelativeLayout>

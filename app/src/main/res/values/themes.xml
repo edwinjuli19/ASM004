@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AFM004" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Customize your light theme here. -->
+        <item name="android:statusBarColor">@android:color/white</item> <!-- Warna status bar putih -->
+        <item name="android:windowLightStatusBar">true</item> <!-- Ikon status bar berwarna gelap -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryVariant">@color/orange</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- <item name="colorPrimaryx">@color/my_light_primary</item> -->
+
+    </style>
+
+    <style name="Theme.AFM004" parent="Base.Theme.AFM004" />
+</resources>
+

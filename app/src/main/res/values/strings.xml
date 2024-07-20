@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Apps 004</string>
+    <string name="pending_button_desc">Tombol untuk menandai status sebagai pending</string>
+</resources>

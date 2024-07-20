@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listObservationFragment">
+
+    <fragment
+        android:id="@+id/listObservationFragment"
+        android:name="id.ac.polman.astra.afm004.Fragment.ListObservationFragment"
+        android:label="List Observation"
+        tools:layout="@layout/fragment_list_observation">
+        <action
+            android:id="@+id/action_listObservationFragment_to_observationAssetFragment"
+            app:destination="@id/observationAssetFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/observationAssetFragment"
+        android:name="id.ac.polman.astra.afm004.Fragment.ObservationAssetFragment"
+        android:label="Observation Asset"
+        tools:layout="@layout/fragment_observation_asset" />
+</navigation>

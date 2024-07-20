@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardview_up_settlement"
+        android:layout_width="480dp"
+        android:layout_height="80dp"
+        android:background="@drawable/card_list"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        app:cardCornerRadius="25dp"
+        android:layout_gravity="top|center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="91dp"
+                android:background="@drawable/card_list">
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/rm6vcbgd0xzq"
+            android:layout_width="330dp"
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_shape"
+            android:orientation="vertical"
+            android:layout_marginLeft="55dp"
+            android:drawablePadding="8dp"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:hint="Cari Observation"
+            android:drawableRight="@drawable/search"
+            android:layout_gravity="left|center">
+
+        </EditText>
+
+        <ImageView
+            android:id="@+id/filter"
+            android:layout_width="24dp"
+            android:layout_height="19dp"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="55dp"
+            android:layout_marginTop="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/filter" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="78dp"
+        android:background="@color/dark_red"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="8dp">
+
+            <TextView
+                android:id="@+id/listobservation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="List Observation"
+                android:textAlignment="viewStart"
+                android:textColor="#F5F5F5"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="5dp"/>
+
+            <TextView
+                android:id="@+id/historyobservation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="History Observation"
+                android:textColor="#F5F5F5"
+                android:textSize="14sp"
+                android:gravity="right"
+                app:layout_constraintStart_toEndOf="@id/list_observation"
+                app:layout_constraintTop_toTopOf="@id/list_observation"
+                android:layout_marginStart="95dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

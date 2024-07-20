@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:id="@+id/card_file"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="2dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_shape"
+        android:clipChildren="false"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/rp3acatc296e"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="19dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Jenis Dokumen"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/document_type"
+            android:textColor="#333333"
+            android:textSize="10sp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="20dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Foto Full Mesin" />
+
+        <TextView
+            android:id="@+id/rqrfs7mkr419"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="19dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Nama Dokumen"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/document_name"
+            android:textColor="#333333"
+            android:textSize="10sp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="19dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="00895.A1.png" />
+
+        <TextView
+            android:id="@+id/rvxpiy69h6tn"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginStart="18dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="GeoTag"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/geotag"
+            android:textColor="#333333"
+            android:textSize="10sp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginStart="19dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="HC7J+HFR, Kamojing, Kec. Cikampek, Karawang, Jawa Barat 41373" />
+
+        <LinearLayout
+            android:id="@+id/rgkunsde9jns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginStart="205dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/raj8czndu89d"
+                android:layout_width="15dp"
+                android:layout_height="19dp"
+                android:src="@drawable/download"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:id="@+id/rpvb7vtqamjk"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+
+            <ImageView
+                android:id="@+id/rog3h4bspr6j"
+                android:layout_width="15dp"
+                android:layout_height="19dp"
+                android:src="@drawable/bin"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rncbw8vu9ppn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginStart="190dp"
+            android:layout_marginBottom="20dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rjytjc9lie3e"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="Download"
+                android:textColor="#14CB35"
+                android:textSize="9sp" />
+
+            <LinearLayout
+                android:id="@+id/ii"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/rodehluuk4dg"
+                    android:layout_marginStart="25dp"
+                    android:textColor="#D71F1F"
+                    android:textSize="9sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="30dp"
+                    android:text="Delete" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

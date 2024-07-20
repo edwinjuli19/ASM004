@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_gray">#FFEEEEEE</color>
+    <color name="gray_text">#A9A9A9</color>
+    <color name="dark_turquoise">#FF03797C</color>
+    <color name="very_light_gray">#FFF6F6F6</color>
+    <color name="orange">#FFF96900</color>
+    <color name="dark_red">#FF441110</color>
+    <color name="gold">#D69A00</color>
+    <color name="green">#008705</color>
+    <color name="cht_button">#ee3d1f</color>
+
+</resources>

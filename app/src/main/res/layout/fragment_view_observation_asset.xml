@@ -1,0 +1,877 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFFFF"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/r6hrzb79dbac"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFFFF"
+        android:paddingBottom="67dp"
+        android:paddingTop="15dp"
+        android:elevation="4dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:textColor="#A9A9A9"
+                android:textSize="12sp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginStart="36dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Auc Number"
+                />
+
+            <EditText
+                android:id="@+id/auc_number"
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="5dp"
+                android:text="200000022921 - 0"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFCFEFF"
+                android:layout_marginBottom="26dp"
+                android:layout_marginHorizontal="36dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <TextView
+                android:textColor="#A9A9A9"
+                android:textSize="12sp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="39dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Asset Description"
+                />
+
+            <LinearLayout
+                android:id="@+id/r12446rulvbjj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="39dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/asset_description"
+                    android:textColor="#000000"
+                    android:textSize="13sp"
+                    android:layout_marginTop="11dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="335dp"
+                    android:text="Auto Loader Press Cone Race"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFCFEFF"
+                android:layout_marginBottom="26dp"
+                android:layout_marginHorizontal="36dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="42dp"
+                android:layout_marginBottom="10dp"
+                android:text="Asset Class"
+                android:textColor="#A9A9A9"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="38dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/aset_class"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="335dp"
+                    android:text="10500 - Fixed Asset - Machineries"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/r9eodus0hshk"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFCFEFF"
+                android:layout_marginBottom="26dp"
+                android:layout_marginHorizontal="36dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/rv40vv6zzbeh"
+                android:textColor="#A9A9A9"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="42dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Asset Group"
+                />
+
+            <LinearLayout
+                android:id="@+id/r2dmbreirm5q"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="38dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/asset_group"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="335dp"
+                    android:text="10500012 - Conveyor"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFCFEFF"
+                android:layout_marginBottom="26dp"
+                android:layout_marginHorizontal="36dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/ry4ik5q98uv"
+                android:textColor="#A9A9A9"
+                android:textSize="12sp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginStart="39dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Cost Center Asset Responsible"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="39dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/cost_center_asset_responsible"
+                    android:textColor="#000000"
+                    android:textSize="13sp"
+                    android:layout_marginTop="11dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="335dp"
+                    android:text="Auto Loader Press Cone Race"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFCFEFF"
+                android:layout_marginBottom="26dp"
+                android:layout_marginHorizontal="36dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+
+            <TextView
+                android:textColor="#A9A9A9"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="42dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Cost Center Depreciation"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="38dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/cost_center_depreciation"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="335dp"
+                    android:text="PEE000 - PROC ENGINEERING E"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFCFEFF"
+                android:layout_marginBottom="26dp"
+                android:layout_marginHorizontal="36dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+            <TextView
+                android:textColor="#A9A9A9"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="42dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Plant ID"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="38dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/plant_id"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="335dp"
+                    android:text="2000 – NEW PQE AHTC"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFCFEFF"
+                android:layout_marginBottom="26dp"
+                android:layout_marginHorizontal="36dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <TextView
+                android:textColor="#A9A9A9"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="42dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Asset Location"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="38dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/asset_location"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="335dp"
+                    android:text="PQWSL1PQ - Plant 2000, Workshop"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFCFEFF"
+                android:layout_marginBottom="26dp"
+                android:layout_marginHorizontal="36dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+            <TextView
+                android:textColor="#A9A9A9"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="42dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Asset Status"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="38dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/asset_status"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="335dp"
+                    android:text="Use Good"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFCFEFF"
+                android:layout_marginBottom="26dp"
+                android:layout_marginHorizontal="36dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+            <TextView
+                android:textColor="#A9A9A9"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="42dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Activity Type"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="38dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/activity_type"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="335dp"
+                    android:text="4001- KWW - LVA"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFCFEFF"
+                android:layout_marginBottom="26dp"
+                android:layout_marginHorizontal="36dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+            <TextView
+                android:textColor="#A9A9A9"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="42dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Main Asset Number"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="38dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/main_asset_number"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="335dp"
+                    android:text="100000022921 - 0"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFCFEFF"
+                android:layout_marginBottom="26dp"
+                android:layout_marginHorizontal="36dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+            <TextView
+                android:textColor="#A9A9A9"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="42dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Asset Export License"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="38dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/asset_export_license"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:layout_height="48dp"
+                    android:layout_width="335dp"
+                    android:text="No"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFCFEFF"
+                android:layout_marginBottom="26dp"
+                android:layout_marginHorizontal="36dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+            <TextView
+                android:textColor="#A9A9A9"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="42dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Asset Manufacturing"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="38dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/asset_manufacturing"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:layout_height="48dp"
+                    android:layout_width="335dp"
+                    android:text="Outplant"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#FFFCFEFF"
+                android:layout_marginBottom="26dp"
+                android:layout_marginHorizontal="36dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+            <com.google.android.material.card.MaterialCardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cardview_settlement"
+                android:layout_width="345dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/card_list"
+                app:cardBackgroundColor="@color/dark_red"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                app:cardCornerRadius="25dp"
+                android:layout_gravity="top|center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/card_list">
+
+                    <TextView
+                        android:id="@+id/text_Asset_Description"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="ITEM CONFIRMATION"
+                        android:textAlignment="center"
+                        android:textColor="#F5F5F5"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/content_card"
+                        android:layout_width="370dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_shape"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_marginTop="48dp"
+                        app:cardCornerRadius="10dp"
+                        android:layout_gravity="top|center"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:strokeColor="@color/white">
+
+                        <LinearLayout
+                            android:id="@+id/parent_linear_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/kanan"
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:layout_marginRight="10dp"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:textColor="#A9A9A9"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginStart="35dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="Asset sudah digunakan?"
+                                    />
+
+                                <EditText
+                                    android:id="@+id/item1"
+                                    android:layout_width="280dp"
+                                    android:layout_height="48dp"
+                                    android:layout_marginStart="32dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="No"
+                                    android:textColor="#000000"
+                                    android:textSize="13sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#FFFCFEFF"
+                                    android:layout_marginHorizontal="36dp"
+                                    android:orientation="vertical">
+                                </LinearLayout>
+
+
+                                <TextView
+                                    android:textColor="#A9A9A9"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginStart="35dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="Asset sudah digunakan?"
+                                    />
+
+                                <EditText
+                                    android:id="@+id/item2"
+                                    android:layout_width="280dp"
+                                    android:layout_height="48dp"
+                                    android:layout_marginStart="32dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="No"
+                                    android:textColor="#000000"
+                                    android:textSize="13sp" />
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#FFFCFEFF"
+                                    android:layout_marginHorizontal="36dp"
+                                    android:orientation="vertical">
+                                </LinearLayout>
+
+
+                                <TextView
+                                    android:textColor="#A9A9A9"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginStart="35dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="Asset sudah digunakan?"
+                                    />
+
+                                <EditText
+                                    android:id="@+id/item3"
+                                    android:layout_width="280dp"
+                                    android:layout_height="48dp"
+                                    android:layout_marginStart="32dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="No"
+                                    android:textColor="#000000"
+                                    android:textSize="13sp" />
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#FFFCFEFF"
+                                    android:layout_marginHorizontal="36dp"
+                                    android:orientation="vertical">
+                                </LinearLayout>
+
+                                <TextView
+                                    android:textColor="#A9A9A9"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginStart="35dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="Asset sudah digunakan?"
+                                    />
+
+                                <EditText
+                                    android:id="@+id/item4"
+                                    android:layout_width="280dp"
+                                    android:layout_height="48dp"
+                                    android:layout_marginStart="32dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="No"
+                                    android:textColor="#000000"
+                                    android:textSize="13sp" />
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#FFFCFEFF"
+                                    android:layout_marginHorizontal="36dp"
+                                    android:orientation="vertical">
+                                </LinearLayout>
+
+                                <TextView
+                                    android:textColor="#A9A9A9"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginStart="35dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="Asset sudah digunakan?"
+                                    />
+
+                                <EditText
+                                    android:id="@+id/item6"
+                                    android:layout_width="280dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="32dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="No"
+                                    android:textColor="#000000"
+                                    android:textSize="13sp" />
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#FFFCFEFF"
+                                    android:layout_marginHorizontal="36dp"
+                                    android:orientation="vertical">
+                                </LinearLayout>
+
+
+                                <TextView
+                                    android:textColor="#A9A9A9"
+                                    android:textSize="12sp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginStart="35dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="Asset sudah digunakan?"
+                                    />
+
+                                <EditText
+                                    android:id="@+id/item7"
+                                    android:layout_width="280dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="32dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:text="No"
+                                    android:textColor="#000000"
+                                    android:textSize="13sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#FFFCFEFF"
+                                    android:layout_marginBottom="20dp"
+                                    android:layout_marginHorizontal="36dp"
+                                    android:orientation="vertical">
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="50dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                >
+
+
+                <Button
+                    android:id="@+id/btn_saveasdraft"
+                    android:layout_width="340dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/custom_button_cht"
+                    android:fontFamily="sans-serif"
+                    android:layout_gravity="center"
+                    android:text="Back"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/dark_turquoise"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
